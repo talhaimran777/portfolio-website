@@ -1,7 +1,9 @@
+import Navbar from "@/components/ui/Navbar";
+
 export default function Home() {
   return (
-    <h1 className='bg-red-400'>
-      Hello, World
-    </h1>
-  )
+    <div className="px-2 min-[1208px]:px-0">
+      <Navbar />
+    </div>
+  );
 }
