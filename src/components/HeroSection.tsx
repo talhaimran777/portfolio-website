@@ -3,7 +3,7 @@ import ProfilePic from "images/profile-pic.jpg";
 
 const HeroSection = () => {
   return (
-    <div className="max-w-[1200px] mx-auto my-[50px] lg:my-[100px] flex flex-col justify-center items-center">
+    <div className="my-[50px] lg:my-[100px] flex flex-col justify-center items-center">
       <Image
         className="h-52 w-52 lg:h-80 lg:w-80 rounded-full border-4 border-[#7367D3] mb-10"
         src={ProfilePic}
