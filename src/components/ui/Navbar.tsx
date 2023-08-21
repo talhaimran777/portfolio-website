@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="text-black py-6 lg:py-12">
+    <nav className="py-6 lg:py-12 text-[#42446E]">
       <div className="flex justify-between items-center max-w-[1200px] mx-auto">
         <div className="font-semibold text-2xl text-[#7367D3]">Talha Imran</div>
         <div className="hidden lg:block">
@@ -51,9 +51,9 @@ const Navbar = () => {
             <svg
               className="h-8 w-8"
               fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
