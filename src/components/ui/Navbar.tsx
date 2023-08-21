@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className="py-6 lg:py-12 text-[#42446E]">
       <div className="flex justify-between items-center max-w-[1200px] mx-auto">
-        <div className="font-semibold text-2xl text-[#7367D3]">Talha Imran</div>
+        <div className="font-semibold text-2xl text-[#7367D3]">Web Developer</div>
         <div className="hidden lg:block">
           <ul className="space-x-[67px]">
             <li className="inline-block">
