@@ -8,7 +8,7 @@ const Projects = () => {
         heading="Projects"
         secondaryHeading="Things I have built so far!"
       />
-      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-16 my-16 lg:my-24">
+      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-16 my-16 lg:my-32">
         <Card
           title="Chat Application"
           description="This is a real time chat application built using React, Node & typescript."
