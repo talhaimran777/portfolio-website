@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
+import Logo from "images/logo.svg";
+import Image from "next/image";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -12,9 +14,7 @@ const Navbar = () => {
   return (
     <nav className="py-6 lg:py-12 text-[#42446E]">
       <div className="flex justify-between items-center max-w-[1200px] mx-auto">
-        <div className="font-semibold text-xl lg:text-2xl text-[#7B6BF3]">
-          Talha Imran
-        </div>
+        <Image src={Logo} alt="Talha Imran" height={35} width={35} />
         <div className="hidden lg:block">
           <ul className="space-x-[67px]">
             <li className="inline-block">

@@ -1,21 +1,21 @@
 import Image from "next/image";
-import React from "react";
-import ProfileImage from "images/profile-pic.jpg";
 
 const Card = ({
   title,
   description,
   technologies,
+  image,
 }: {
   title: String;
   description: String;
   technologies: String[];
+  image: any;
 }) => {
   return (
-    <div className="bg-white shadow-xl rounded-lg overflow-hidden max-w-[375px] mx-auto">
+    <div className="bg-white shadow-lg rounded-lg max-w-[375px] mx-auto">
       <Image
-        className="w-full h-48 object-cover"
-        src={ProfileImage}
+        className="w-full rounded-lg"
+        src={image}
         alt="Project Image"
         placeholder="blur"
       />
