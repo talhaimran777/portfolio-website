@@ -5,11 +5,15 @@ const Card = ({
   description,
   technologies,
   image,
+  livePreview,
+  githubUrl,
 }: {
   title: String;
   description: String;
   technologies: String[];
   image: any;
+  livePreview: string;
+  githubUrl: string;
 }) => {
   return (
     <div className="bg-white shadow-lg rounded-lg max-w-[375px]">
@@ -21,16 +25,24 @@ const Card = ({
       />
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
-        <p className="text-gray-700 text-justify">{description}</p>
-        <div className="flex justify-between mt-3 gap-x-2">
+        <p className="text-gray-700 text-left">{description}</p>
+        <div className="flex mt-3 gap-x-2">
           <p className="font-bold">Stack:</p>
-          <p>{technologies.join(", ")}</p>
+          <p className="text-gray-500">{technologies.join(", ")}</p>
         </div>
         <div className="mt-4 flex justify-between items-center">
-          <a href="#" className="text-blue-500 hover:underline">
+          <a
+            href={livePreview}
+            target="_blank"
+            className="text-blue-500 hover:underline"
+          >
             Live Preview
           </a>
-          <a href="#" className="text-blue-500 hover:underline">
+          <a
+            href={githubUrl}
+            target="_blank"
+            className="text-blue-500 hover:underline"
+          >
             View Code
           </a>
         </div>

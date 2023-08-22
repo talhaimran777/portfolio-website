@@ -1,7 +1,6 @@
 import Card from "components/ui/Card";
 import SectionInto from "components/ui/SectionInto";
-import ChatAppImage from "images/chat-app.png";
-import ProfileImage from "images/profile-pic.jpg";
+import MultiStepForm from "images/multi-step-form.png";
 
 const Projects = () => {
   return (
@@ -12,40 +11,12 @@ const Projects = () => {
       />
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-16 my-16 lg:my-32 items-start place-items-center">
         <Card
-          image={ChatAppImage}
-          title="Chat Application"
-          description="This is a real time chat application built using React, Node & typescript."
-          technologies={["React", "Node", "Socket.io", "Next.js", "Graphql"]}
-        />
-        <Card
-          image={ProfileImage}
-          title="Chat Application"
-          description="This is a real time chat application built using React, Node & typescript."
-          technologies={["React", "Node", "Socket.io", "Next.js", "Graphql"]}
-        />
-        <Card
-          image={ChatAppImage}
-          title="Chat Application"
-          description="This is a real time chat application built using React, Node & typescript."
-          technologies={["React", "Node", "Socket.io", "Next.js", "Graphql"]}
-        />
-        <Card
-          image={ProfileImage}
-          title="Chat Application"
-          description="This is a real time chat application built using React, Node & typescript."
-          technologies={["React", "Node", "Socket.io", "Next.js", "Graphql"]}
-        />
-        <Card
-          image={ChatAppImage}
-          title="Chat Application"
-          description="This is a real time chat application built using React, Node & typescript."
-          technologies={["React", "Node", "Socket.io", "Next.js", "Graphql"]}
-        />
-        <Card
-          image={ProfileImage}
-          title="Chat Application"
-          description="This is a real time chat application built using React, Node & typescript."
-          technologies={["React", "Node", "Socket.io", "Next.js", "Graphql"]}
+          image={MultiStepForm}
+          title="Multi Step Form"
+          description="Crafted with Next.js, Context API, and Tailwind CSS, this multi-step form offers a seamless user experience. Simplify complex data collection in style."
+          technologies={["nextjs", "context api", "tailwindcss"]}
+          livePreview="https://multi-step-form-n84yetjdt-talhaimran777.vercel.app"
+          githubUrl="https://github.com/talhaimran777/multi-step-form-challenge"
         />
       </div>
     </div>

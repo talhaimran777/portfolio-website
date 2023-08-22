@@ -18,12 +18,16 @@ const Navbar = () => {
         <Image src={Logo} alt="Talha Imran" height={35} width={35} />
         <div className="hidden lg:block">
           <div className="flex justify-between items-center gap-x-3">
-            <div className="text-[#7B6BF3] flex justify-center items-center rounded-full border-2 border-[#7B6BF3] p-3 hover:bg-[#7B6BF3] hover:text-white cursor-pointer transition-all">
-              <FaLinkedinIn className=" text-xl" />
-            </div>
-            <div className="text-[#7B6BF3] flex justify-center items-center rounded-full border-2 border-[#7B6BF3] p-3 hover:bg-[#7B6BF3] hover:text-white cursor-pointer transition-all">
-              <FaGithubAlt className=" text-xl" />
-            </div>
+            <a href="https://www.linkedin.com/in/talhaimran777" target="_blank">
+              <div className="text-[#7B6BF3] flex justify-center items-center rounded-full border-2 border-[#7B6BF3] p-3 hover:bg-[#7B6BF3] hover:text-white cursor-pointer transition-all">
+                <FaLinkedinIn className="text-xl" />
+              </div>
+            </a>
+            <a href="https://github.com/talhaimran777" target="_blank">
+              <div className="text-[#7B6BF3] flex justify-center items-center rounded-full border-2 border-[#7B6BF3] p-3 hover:bg-[#7B6BF3] hover:text-white cursor-pointer transition-all">
+                <FaGithubAlt className="text-xl" />
+              </div>
+            </a>
           </div>
         </div>
         <div className="lg:hidden">
