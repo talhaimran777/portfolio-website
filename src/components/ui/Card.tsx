@@ -12,7 +12,7 @@ const Card = ({
   image: any;
 }) => {
   return (
-    <div className="bg-white shadow-lg rounded-lg max-w-[375px] mx-auto">
+    <div className="bg-white shadow-lg rounded-lg max-w-[375px]">
       <Image
         className="w-full rounded-lg"
         src={image}

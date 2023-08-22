@@ -10,7 +10,7 @@ const Projects = () => {
         heading="Projects"
         secondaryHeading="Things I have built so far!"
       />
-      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-16 my-16 lg:my-32 items-start">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-16 my-16 lg:my-32 items-start place-items-center">
         <Card
           image={ChatAppImage}
           title="Chat Application"

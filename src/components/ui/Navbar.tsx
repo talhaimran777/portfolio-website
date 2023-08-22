@@ -1,8 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
 import Logo from "images/logo.svg";
 import Image from "next/image";
+import { useState } from "react";
+import { FaGithubAlt, FaLinkedinIn } from "react-icons/fa6";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -16,33 +17,14 @@ const Navbar = () => {
       <div className="flex justify-between items-center max-w-[1200px] mx-auto">
         <Image src={Logo} alt="Talha Imran" height={35} width={35} />
         <div className="hidden lg:block">
-          <ul className="space-x-[67px]">
-            <li className="inline-block">
-              <a href="#" className="text-xl">
-                Home
-              </a>
-            </li>
-            <li className="inline-block">
-              <a href="#" className="text-xl">
-                About
-              </a>
-            </li>
-            <li className="inline-block">
-              <a href="#" className="text-xl">
-                Tech Stack
-              </a>
-            </li>
-            <li className="inline-block">
-              <a href="#" className="text-xl">
-                Projects
-              </a>
-            </li>
-            <li className="inline-block">
-              <a href="#" className="text-xl">
-                Contact
-              </a>
-            </li>
-          </ul>
+          <div className="flex justify-between items-center gap-x-3">
+            <div className="text-[#7B6BF3] flex justify-center items-center rounded-full border-2 border-[#7B6BF3] p-3 hover:bg-[#7B6BF3] hover:text-white cursor-pointer transition-all">
+              <FaLinkedinIn className=" text-xl" />
+            </div>
+            <div className="text-[#7B6BF3] flex justify-center items-center rounded-full border-2 border-[#7B6BF3] p-3 hover:bg-[#7B6BF3] hover:text-white cursor-pointer transition-all">
+              <FaGithubAlt className=" text-xl" />
+            </div>
+          </div>
         </div>
         <div className="lg:hidden">
           <button
