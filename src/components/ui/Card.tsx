@@ -23,6 +23,7 @@ const Card = ({
         alt="Project Image"
         placeholder="blur"
       />
+      <hr/>
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
         <p className="text-gray-700 text-justify">{description}</p>

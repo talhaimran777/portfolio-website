@@ -2,6 +2,7 @@ import Card from "components/ui/Card";
 import SectionInto from "components/ui/SectionInto";
 import MultiStepForm from "images/multi-step-form.png";
 import DeveloperPortfolio from "images/developer-portfolio.png";
+import NestedComments from "images/reddit-nested-comments.png";
 
 const Projects = () => {
   return (
@@ -27,7 +28,14 @@ const Projects = () => {
           livePreview="https://single-page-devloper-portfolio-challenge.vercel.app"
           githubUrl="https://github.com/talhaimran777/single-page-devloper-portfolio-challenge"
         />
-
+        <Card
+          image={NestedComments}
+          title="Nested Commenting System"
+          description="Presenting a React-powered Reddit-like nested commenting system clone: For the first time in my life, I am recursively calling a react component to create this nested looking commenting system."
+          technologies={["vite", "context api", "tailwindcss"]}
+          livePreview="https://nested-comments-system.vercel.app"
+          githubUrl="https://github.com/talhaimran777/nested-comments-system"
+        />
       </div>
     </div>
   );
