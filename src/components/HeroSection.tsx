@@ -6,7 +6,7 @@ const HeroSection = () => {
     <div className="my-[70px] lg:my-[100px] flex flex-col justify-center items-center">
       <div className="flex justify-center items-center mb-16">
         <div className="font-bold leading-[70px] text-[#42446E] text-center">
-          <h1 className="text-3xl lg:text-5xl lg:mb-6 font-black">
+          <h1 className="text-3xl lg:text-5xl mb-3 lg:mb-6 font-black">
             Frontend Web Developer
           </h1>
           <p className="text-xl lg:text-2xl font-light">
