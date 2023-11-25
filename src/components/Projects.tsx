@@ -1,6 +1,6 @@
 import Card from "components/ui/Card";
 import SectionInto from "components/ui/SectionInto";
-import MultiStepForm from "images/multi-step-form.png";
+import MultiStepForm from "images/multi-step-form-v2.jpeg";
 import DeveloperPortfolio from "images/developer-portfolio.png";
 import NestedComments from "images/reddit-nested-comments.png";
 

@@ -16,7 +16,7 @@ const Card = ({
   githubUrl: string;
 }) => {
   return (
-    <div className="bg-white shadow-lg rounded-lg w-full">
+    <div className="bg-white shadow-md rounded-lg w-full">
       <Image
         className="w-full rounded-lg"
         src={image}
