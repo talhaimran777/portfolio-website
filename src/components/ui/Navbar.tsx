@@ -5,7 +5,7 @@ import { FaGithubAlt, FaLinkedinIn } from 'react-icons/fa6'
 const Navbar = () => {
     return (
         <nav className='py-6 lg:py-12 text-[#42446E]'>
-            <div className='flex justify-between items-center max-w-[1200px] mx-auto'>
+            <div className='flex justify-between items-center max-w-[1000px] mx-auto'>
                 <a href='/'>
                     <Image
                         src={Logo}

@@ -7,7 +7,7 @@ import { FaGithubAlt, FaLinkedinIn } from 'react-icons/fa6'
 const Footer = () => {
     return (
         <div className='py-6 lg:py-12 text-[#42446E]'>
-            <div className=' max-w-[1200px] mx-auto'>
+            <div className='max-w-[1000px] mx-auto'>
                 <hr />
                 <div className='flex flex-col md:flex-row gap-y-3 md:gap-y-0 justify-between items-center mt-11'>
                     <a href='/'>

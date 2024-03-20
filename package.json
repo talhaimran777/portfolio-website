@@ -10,10 +10,15 @@
         "pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\""
     },
     "dependencies": {
+        "@mdx-js/loader": "^3.0.1",
+        "@mdx-js/react": "^3.0.1",
+        "@next/mdx": "^14.1.4",
+        "@types/mdx": "^2.0.11",
         "next": "14.1.0",
         "react": "^18",
         "react-dom": "^18",
         "react-icons": "^5.0.1",
+        "rehype-pretty-code": "^0.13.0",
         "sharp": "^0.33.2"
     },
     "devDependencies": {
