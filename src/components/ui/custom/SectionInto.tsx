@@ -8,11 +8,11 @@ const SectionInto = ({
     secondaryHeading: String
 }) => {
     return (
-        <div className='text-center text-[#42446E]'>
-            <h1 className='text-3xl lg:text-5xl font-bold mb-2 lg:mb-8'>
+        <div className='text-center'>
+            <h1 className='text-3xl lg:text-4xl mb-3 lg:mb-6 font-black'>
                 {heading}
             </h1>
-            <p className='text-xl lg:text-[32px] text-[#42446E] font-medium'>
+            <p className='text-xl lg:text-2xl font-light dark:text-slate-300'>
                 {secondaryHeading}
             </p>
         </div>

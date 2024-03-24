@@ -26,7 +26,7 @@ const Card = ({
             <hr />
             <div className='p-6'>
                 <h3 className='text-xl font-semibold mb-2'>{title}</h3>
-                <p className='text-gray-700 text-justify'>{description}</p>
+                <p className='text-gray-700'>{description}</p>
                 <div className='flex mt-3 gap-x-2'>
                     <p className='font-bold'>Stack:</p>
                     <p className='text-gray-500'>{technologies.join(', ')}</p>

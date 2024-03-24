@@ -1,17 +1,17 @@
-import Card from 'components/ui/Card'
-import SectionInto from 'components/ui/SectionInto'
+import Card from 'components/ui/custom/Card'
+import SectionInto from 'components/ui/custom/SectionInto'
 import MultiStepForm from 'images/multi-step-form-v2.jpeg'
 import DeveloperPortfolio from 'images/developer-portfolio.png'
 import NestedComments from 'images/reddit-nested-comments.png'
 
 const Projects = () => {
     return (
-        <div className='my-[50px] lg:my-[100px] max-w-[1000px] mx-auto'>
+        <div className='my-[50px] lg:my-[100px] max-w-[1200px] mx-auto'>
             <SectionInto
                 heading='Projects'
                 secondaryHeading='Things I have built so far!'
             />
-            <div className='grid md:grid-cols-2 xl:grid-cols-3 gap-8 my-16 lg:my-32 items-start place-items-center'>
+            <div className='grid md:grid-cols-2 xl:grid-cols-3 gap-8 my-16 lg:my-32 items-center'>
                 <Card
                     image={MultiStepForm}
                     title='Multi Step Form'

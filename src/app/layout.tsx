@@ -1,7 +1,8 @@
-import Navbar from 'components/ui/Navbar'
+import Navbar from 'components/ui/custom/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { DM_Sans } from 'next/font/google'
+import { ThemeProvider } from 'components/ThemeProvider'
 
 const dmSans = DM_Sans({ subsets: ['latin'] })
 
@@ -18,10 +19,17 @@ export default function RootLayout({
     return (
         <html lang='en'>
             <body className={dmSans.className}>
-                <div className='px-4 min-[1208px]:px-0'>
-                    <Navbar />
-                    {children}
-                </div>
+                <ThemeProvider
+                    attribute='class'
+                    defaultTheme='dark'
+                    enableSystem
+                    disableTransitionOnChange
+                >
+                    <div className='px-4 min-[1208px]:px-0 dark:bg-[#20212C] text-slate-800 dark:text-white'>
+                        <Navbar />
+                        {children}
+                    </div>
+                </ThemeProvider>
             </body>
         </html>
     )

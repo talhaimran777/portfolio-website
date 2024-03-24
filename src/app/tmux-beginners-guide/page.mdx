@@ -1,0 +1,58 @@
+import BlogPostHeader from 'components/ui/custom/BlogPostHeader'
+import BlogPostImage from 'components/ui/custom/BlogPostImage'
+import HeaderImage from 'images/tmux-tutorial-blog-header-image.png'
+import BlankTmux from 'images/blank-tmux.png'
+
+<BlogPostHeader title='TMUX - Beginner&apos;s Guide 🚀' date='March 24, 2024' image={HeaderImage} />
+<br />
+
+Tmux is a powerful tool that can help you manage **multiple terminal sessions** in a **single window**. It allows you to split your terminal window into **multiple panes**, each of which you can run different commands or programs. You can also create **multiple windows** within a single tmux session, allowing you to switch between different sets of sessions, windows and panes.
+
+<br />
+
+Let's just get started with tmux 🔥
+
+<br />
+<br />
+
+I'm assuming that you have already installed tmux in your system. In order to verify that tmux is installed or not, you can run the following command in your terminal.
+
+<br />
+
+```bash
+tmux -V
+```
+
+<br />
+
+It should output something like this: **tmux 3.2a** depending upon the version of tmux that you have already installed.
+
+<br />
+<br />
+
+## Sessions
+
+In order to get started with sessions, let&apos;s just first try creating a new session.
+
+Run this following command in your terminal.
+
+<br />
+
+```bash
+tmux
+```
+
+<br />
+
+After running this command, you will see a status bar at the bottom of your terminal window. This status bar will show you the name of the session, user&apos;s info, the time and the date.
+
+<br />
+
+It will look something like this.
+
+<br />
+
+<BlogPostImage image={BlankTmux} />
+
+<br />
+<br />

@@ -3,20 +3,21 @@ import React from 'react'
 import Logo from 'images/logo.svg'
 import Image from 'next/image'
 import { FaGithubAlt, FaLinkedinIn } from 'react-icons/fa6'
+import Link from 'next/link'
 
 const Footer = () => {
     return (
-        <div className='py-6 lg:py-12 text-[#42446E]'>
-            <div className='max-w-[1000px] mx-auto'>
-                <hr />
+        <div className='py-6 lg:py-12 dark:text-slate-300'>
+            <div className='max-w-[1200px] mx-auto'>
+                {/* <hr /> */}
                 <div className='flex flex-col md:flex-row gap-y-3 md:gap-y-0 justify-between items-center mt-11'>
-                    <a href='/'>
+                    <Link href='/'>
                         <Image
                             src={Logo}
                             alt='Talha Imran'
                             className='h-7 md:h-9 w-7 md:w-9'
                         />
-                    </a>
+                    </Link>
                     <div className='flex flex-col md:flex-row justify-between items-center gap-x-3'>
                         <p>+923114048235</p>
                         <p>talhaimran284@gmail.com</p>

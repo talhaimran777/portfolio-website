@@ -1,18 +1,17 @@
 import Image from 'next/image'
 import ProfilePic from 'images/profile-pic.jpg'
+import SectionInto from 'components/ui/custom/SectionInto'
 
 const HeroSection = () => {
     return (
         <div className='my-[70px] lg:my-[100px] flex flex-col justify-center items-center'>
-            <div className='flex justify-center items-center mb-16'>
-                <div className='font-bold leading-[70px] text-[#42446E] text-center'>
-                    <h1 className='text-3xl lg:text-5xl mb-3 lg:mb-6 font-black'>
-                        Frontend Web Developer
-                    </h1>
-                    <p className='text-xl lg:text-2xl font-light'>
-                        I code beautifully simply things, and I love what i do.
-                    </p>
-                </div>
+            <div className='flex justify-center items-center mb-16 font-bold leading-[70px] text-center max-w-xl'>
+                <SectionInto
+                    heading={'Frontend Web Developer'}
+                    secondaryHeading={
+                        'I code beautifully simple things, and I love what I do.'
+                    }
+                />
             </div>
             <Image
                 className='h-52 w-52 rounded-full border-4 border-[#7B6BF3]'
