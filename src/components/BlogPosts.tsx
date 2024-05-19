@@ -14,7 +14,7 @@ const BlogPost = ({
 }) => {
     return (
         <Link href={link}>
-            <div className='flex flex-col gap-2'>
+            <div className='flex flex-col gap-2 border-b-2 dark:border-white pb-3'>
                 <div className='flex justify-between items-center gap-2 flex-wrap'>
                     <h1 className='text-xl lg:text-2xl font-bold'>{title}</h1>
                     <p className='text-sm min-w-fit dark:text-slate-300'>
@@ -38,7 +38,7 @@ const BlogPosts = () => {
             <div className='max-w-lg mx-auto mt-8 lg:mt-16 flex flex-col gap-8 lg:gap-16'>
                 <BlogPost
                     title="TMUX - Beginner's Guide 🚀"
-                    date='March 24, 2024'
+                    date='May 19, 2024'
                     description='A beginner-friendly guide to TMUX, a terminal multiplexer.'
                     link='/tmux-beginners-guide'
                 />

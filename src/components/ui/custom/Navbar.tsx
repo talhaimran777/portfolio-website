@@ -20,7 +20,7 @@ const Navbar = () => {
     return (
         <nav className='py-6 lg:py-12 bg-grey-primary dark:bg-very-dark-grey'>
             <div className='flex justify-between items-center max-w-[1200px] mx-auto'>
-                <Link href="/">
+                <Link href='/'>
                     <Image
                         src={Logo}
                         alt='Talha Imran'

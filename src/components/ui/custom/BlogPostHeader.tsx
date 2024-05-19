@@ -16,13 +16,12 @@ const BlogPostHeader = ({
             </h1>
 
             <p className='text-sm lg:text-base dark:text-slate-300'>
-                <strong className='dark:text-white'>Published:</strong> {date}
+                <strong className='dark:text-white'>Last Updated:</strong> {date}
             </p>
 
             <Image
                 src={image}
                 alt={title}
-                layout='responsive'
                 placeholder='blur'
                 className='mt-5 rounded-md'
             />

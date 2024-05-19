@@ -2,12 +2,19 @@ import BlogPostHeader from 'components/ui/custom/BlogPostHeader'
 import BlogPostImage from 'components/ui/custom/BlogPostImage'
 import HeaderImage from 'images/tmux-tutorial-blog-header-image.png'
 import BlankTmux from 'images/blank-tmux.png'
+import DetachedFromTmuxSession from 'images/tmux-detached-from-session.png'
+import NewTmuxSessionWithName from 'images/new-tmux-session-with-name.png'
+import TmuxListAllSessions from 'images/tmux-list-all-sessions.png'
+import ListAllSessionsInsideTmux from 'images/list-all-sessions-inside-tmux.png'
+import KillSessionUsingSessionsListView from 'images/kill-session-using-sessions-list-view.png'
+import KillTmuxSessionUsingCommand from 'images/kill-tmux-session-using-command.png'
 
-<BlogPostHeader title='TMUX - Beginner&apos;s Guide 🚀' date='March 24, 2024' image={HeaderImage} />
+<BlogPostHeader title='TMUX - Beginner&apos;s Guide 🚀' date='May 19, 2024' image={HeaderImage} />
 <br />
 
-Tmux is a powerful tool that can help you manage **multiple terminal sessions** in a **single window**. It allows you to split your terminal window into **multiple panes**, each of which you can run different commands or programs. You can also create **multiple windows** within a single tmux session, allowing you to switch between different sets of sessions, windows and panes.
+Tmux is a powerful tool that can help you manage **multiple terminal sessions** on a **single terminal screen**. It allows you to split your terminal window into **multiple panes**, each of which you can use to run different commands or programs. You can also create **multiple windows** within a single tmux session, allowing you to switch between multiple sessions, windows and panes.
 
+<br />
 <br />
 
 Let's just get started with tmux 🔥
@@ -32,23 +39,26 @@ It should output something like this: **tmux 3.2a** depending upon the version o
 
 ## Sessions
 
-In order to get started with sessions, let&apos;s just first try creating a new session.
+In order to get started with tmux sessions, let's first learn, how we can create a new session
 
-Run this following command in your terminal.
+<br />
+
+#### Creating a tmux session
+
+In order to create a new tmux session, run the following command in your terminal.
 
 <br />
 
 ```bash
 tmux
 ```
+<br />
+
+A new tmux session will be created.
 
 <br />
 
-After running this command, you will see a status bar at the bottom of your terminal window. This status bar will show you the name of the session, user&apos;s info, the time and the date.
-
-<br />
-
-It will look something like this.
+You will see a status bar at the bottom of your terminal window. It will show you the session name, system info & datetime.
 
 <br />
 
@@ -56,3 +66,183 @@ It will look something like this.
 
 <br />
 <br />
+
+#### Detaching from a tmux session
+
+In order to detach from a tmux session, you can press the prefix key, **`Ctrl + b`** and then **`d`**. This will detach you from the session and you will be back to your normal terminal.
+
+<br />
+
+After detaching, you will see a screen like this.
+
+<br />
+
+<BlogPostImage image={DetachedFromTmuxSession} />
+
+<br />
+<br />
+
+#### Creating a named tmux session
+
+You can also create a named session by running the following command.
+
+<br />
+
+```bash
+tmux new -s <session-name>
+```
+<br />
+
+Just replace `<session-name>` with the name of your session.
+
+<br />
+
+Let's say, I want to create a tmux session with name **my-session** then i will run the following command.
+
+<br />
+
+```bash
+tmux new -s my-session
+```
+<br />
+
+It will create a brand new tmux session with name **my-session**.
+
+<br />
+
+<BlogPostImage image={NewTmuxSessionWithName} />
+
+<br />
+<br />
+
+#### Listing all the tmux sessions (Outside of tmux)
+
+You can list all the tmux sessions by running the following command.
+
+<br />
+
+```bash
+tmux ls
+```
+<br />
+
+It will list all the tmux sessions that are currently running.
+
+<br />
+
+<BlogPostImage image={TmuxListAllSessions} />
+
+<br />
+<br />
+
+#### Attaching to a tmux session
+
+Let's say that just detached from a tmux session, and you want to re-attach to that session. You can do that by running the following command.
+
+<br />
+
+```bash
+tmux a
+```
+
+<br />
+
+It will re-attach you to the last session that you were in.
+
+<br />
+
+You can also attach to a specific session by running the following command.
+
+<br />
+
+```bash
+tmux a -t <session-name>
+```
+<br />
+
+Just replace `<session-name>` with the name of your session.
+
+<br />
+<br />
+
+#### Listing all the tmux sessions (Inside of tmux)
+
+If you are already inside of a tmux session, you can list all the running tmux sessions by pressing the prefix key, **`Ctrl + b`** and then **`s`**.
+
+<br />
+
+It will open up a **sessions list view** that will list out all the running tmux sessions.
+
+<br />
+
+<BlogPostImage image={ListAllSessionsInsideTmux} />
+
+<br />
+<br />
+
+#### Switching between tmux sessions
+
+Let's say that there are multiple tmux sessions running, you are already attached to a tmux session and you want to switch to another session. In order to do that, Just press the prefix key, **`Ctrl + b`** and then **`s`**.
+
+<br />
+
+It will open up a **sessions list view** that will list out all the running tmux sessions. You can navigate through the list using the arrow keys and then press `Enter` to switch to that session.
+
+<br />
+<br />
+
+#### Killing a tmux session
+
+While killing a session, you can either be inside of a tmux session or outside of a tmux session.
+
+<br />
+
+If you are outside of a tmux session, you can run the following command.
+
+<br />
+
+```bash
+tmux kill-session -t <session-name>
+```
+
+<br />
+
+If you are inside of a tmux session.
+
+<br />
+
+You can press the prefix key, **`Ctrl + b`** and then **`:`**, it will open up a command prompt at the bottom of your terminal. You can then run the following command.
+
+<br />
+
+```bash
+kill-session -t <session-name>
+```
+
+<br />
+
+Just replace `<session-name>` with the name of your session.
+
+<br />
+
+<BlogPostImage image={KillTmuxSessionUsingCommand} />
+
+<br />
+
+OR
+
+<br />
+
+You can use the **sessions list view** inside tmux to kill sessions by navigating to the session with the arrow keys and pressing the **`x`** key. It will ask you to confirm the action, just press **`y`** to confirm and that particular session will be killed.
+
+<br />
+
+<BlogPostImage image={KillSessionUsingSessionsListView} />
+
+<br />
+
+**Note:** Just make sure that you are not killing the currently active session.
+
+<br />
+
+That's it for tmux sessions 🚀

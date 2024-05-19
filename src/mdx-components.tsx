@@ -11,6 +11,9 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         h2: (props) => (
             <h2 className='text-2xl lg:text-4xl font-black mb-3' {...props} />
         ),
+        h4: (props) => (
+            <h4 className='text-lg lg:text-2xl font-black mb-3' {...props} />
+        ),
         strong: (props) => <strong className='dark:text-white' {...props} />,
         ...components,
     }
