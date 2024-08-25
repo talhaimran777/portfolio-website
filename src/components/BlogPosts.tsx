@@ -37,10 +37,10 @@ const BlogPosts = () => {
 
             <div className='max-w-lg mx-auto mt-8 lg:mt-16 flex flex-col gap-8 lg:gap-16'>
                 <BlogPost
-                    title="TMUX - Beginner's Guide 🚀"
-                    date='May 19, 2024'
-                    description='A beginner-friendly guide to TMUX, a terminal multiplexer.'
-                    link='/tmux-beginners-guide'
+                    title='TMUX - Sessions Guide 🚀'
+                    date='Aug 25, 2024'
+                    description='A beginner-friendly guide to TMUX sessions.'
+                    link='/tmux-sessions-guide'
                 />
             </div>
         </div>

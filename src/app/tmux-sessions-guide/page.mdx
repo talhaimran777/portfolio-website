@@ -1,5 +1,6 @@
 import BlogPostHeader from 'components/ui/custom/BlogPostHeader'
 import BlogPostImage from 'components/ui/custom/BlogPostImage'
+
 import HeaderImage from 'images/tmux-tutorial-blog-header-image.png'
 import BlankTmux from 'images/blank-tmux.png'
 import DetachedFromTmuxSession from 'images/tmux-detached-from-session.png'
@@ -9,7 +10,7 @@ import ListAllSessionsInsideTmux from 'images/list-all-sessions-inside-tmux.png'
 import KillSessionUsingSessionsListView from 'images/kill-session-using-sessions-list-view.png'
 import KillTmuxSessionUsingCommand from 'images/kill-tmux-session-using-command.png'
 
-<BlogPostHeader title='TMUX - Beginner&apos;s Guide 🚀' date='May 19, 2024' image={HeaderImage} />
+<BlogPostHeader title='TMUX - Sessions Guide 🚀' date='Aug 25, 2024' image={HeaderImage} />
 <br />
 
 Tmux is a powerful tool that can help you manage **multiple terminal sessions** on a **single terminal screen**. It allows you to split your terminal window into **multiple panes**, each of which you can use to run different commands or programs. You can also create **multiple windows** within a single tmux session, allowing you to switch between multiple sessions, windows and panes.
@@ -187,6 +188,22 @@ Let's say that there are multiple tmux sessions running, you are already attache
 <br />
 
 It will open up a **sessions list view** that will list out all the running tmux sessions. You can navigate through the list using the arrow keys and then press `Enter` to switch to that session.
+
+<br />
+<br />
+
+#### Renaming a tmux session
+In order to rename a tmux session, you can press the prefix key, `Ctrl + b` and then `:` , it will open up a command prompt at the bottom of your terminal. You can then run the following command.
+
+<br />
+
+```bash
+rename-session -t <old-session-name> <new-session-name>
+```
+
+<br />
+
+Just replace `<old-session-name>` with the name of your old session and `<new-session-name>` with the name of your new session.
 
 <br />
 <br />
