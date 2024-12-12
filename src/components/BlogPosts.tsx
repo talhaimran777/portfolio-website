@@ -29,13 +29,13 @@ const BlogPost = ({
 
 const BlogPosts = () => {
     return (
-        <div className='mt-[50px] lg:mt-[100px] max-w-[1200px] mx-auto'>
+        <div className='mt-16 lg:mt-32 max-w-[1200px] mx-auto'>
             <SectionInto
                 heading='Blog Posts'
                 secondaryHeading='Things I have written so far!'
             />
 
-            <div className='max-w-lg mx-auto mt-8 lg:mt-16 flex flex-col gap-8 lg:gap-16'>
+            <div className='mt-8 lg:mt-16 max-w-lg mx-auto flex flex-col gap-8 lg:gap-16'>
                 <BlogPost
                     title='TMUX - Sessions Guide 🚀'
                     date='Aug 25, 2024'

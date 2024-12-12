@@ -18,6 +18,12 @@ const config: Config = {
             },
         },
         extend: {
+            backgroundImage: {
+                'developer-portfolio': "url(/images/developer-portfolio.png)",
+                'multi-step-form': "url(/images/multi-step-form-v2.jpeg)",
+                'reddit-nested-comments': "url(/images/reddit-nested-comments.png)",
+                'tasks-management-system': "url(/images/tasks-management-system.png)",
+            },
             colors: {
                 border: 'hsl(var(--border))',
                 input: 'hsl(var(--input))',
