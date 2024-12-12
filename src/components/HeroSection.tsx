@@ -7,7 +7,7 @@ const HeroSection = () => {
         <div className='my-[70px] lg:my-[100px] flex flex-col justify-center items-center'>
             <div className='flex justify-center items-center mb-16 font-bold leading-[70px] text-center max-w-xl'>
                 <SectionInto
-                    heading={'Frontend Web Developer'}
+                    heading={'Full Stack Software Engineer'}
                     secondaryHeading={
                         'I code beautifully simple things, and I love what I do.'
                     }

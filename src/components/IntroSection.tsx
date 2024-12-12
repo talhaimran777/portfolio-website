@@ -8,12 +8,16 @@ const IntroSection = () => {
                     Hi, I’m Talha. Nice to meet you.
                 </h1>
                 <p className='text-justify text-md lg:text-lg'>
-                    Since beginning my journey as a frontend web developer over
-                    3 years ago, I&apos;ve done work for agencies, for startups,
-                    and collaborated with talented people to create digital
-                    products for both business and consumer use. I&apos;m
-                    quietly confident, naturally curious, and perpetually
-                    working on improving my chops one design problem at a time.
+                    With 4 years of professional experience as a full-stack
+                    software engineer, I have contributed to dynamic teams in
+                    agencies, startups, and product-driven environments to
+                    develop impactful digital solutions for both business and
+                    consumer use. My expertise spans front-end and back-end
+                    technologies, enabling me to deliver seamless, scalable, and
+                    user-focused applications. I&apos;m a proactive problem
+                    solver, naturally curious, and committed to continuously
+                    refining my skills to tackle complex design and engineering
+                    challenges effectively.
                 </p>
             </div>
         </div>
